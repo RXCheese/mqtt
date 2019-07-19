@@ -1,0 +1,17 @@
+spring:
+  mqtt:
+    username: admin
+    password: password
+    url: tcp://localhost:61616
+    completionTimeout: 5000
+    client:
+      id: mqttId
+    topic:
+      app:
+        subscriptions: channelA
+        publish: channelB
+      embedded:
+        subscriptions: channelB
+        publish: channelA
+
+
